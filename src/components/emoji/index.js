@@ -2,9 +2,7 @@ import { h } from "preact";
 import { css } from "emotion";
 
 const emojiClassName = css`
-  display: inline-block;
-  width: 1em;
-  text-align: center;
+  display: inline-flex;
 `;
 
 const Emoji = ({ symbol, label }) => (
