@@ -1,0 +1,26 @@
+{
+  "presets": [["env", { "targets": { "browsers": "last 2 versions" } }]],
+  "env": {
+    "production": {
+      "plugins": [["emotion", { "hoist": true }]]
+    },
+    "development": {
+      "plugins": [["emotion", { "sourceMap": true, "autoLabel": true }]]
+    },
+    "test": {
+      "plugins": [["emotion", { "sourceMap": true, "autoLabel": true }]]
+    }
+  },
+  "plugins": [
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "syntax-dynamic-import",
+    "transform-react-constant-elements",
+    [
+      "transform-react-jsx",
+      {
+        "pragma": "h"
+      }
+    ]
+  ]
+}
